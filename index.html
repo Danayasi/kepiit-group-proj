@@ -7,24 +7,26 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="sidebar">
-    <a href="#hero" class="sidebar__link active">Главная</a>
-        <a href="#features" class="sidebar__link">Возможности</a>
-        <a href="#docs" class="sidebar__link">Документация</a>
-    </nav>
-    <section class="hero">
+    <!-- КРУЖОЧКИ - новая навигация сбоку -->
+    <div class="dot-nav">
+        <div class="dot active" data-section="hero"></div>
+        <div class="dot" data-section="features"></div>
+        <div class="dot" data-section="docs"></div>
+    </div>
+
+    <section id="hero" class="hero">
         <h1>PHYSX 1.0</h1>
         <p>новый, реалистичный и производительный<br>физический фреймворк</p>
         <button>Попробовать</button>
     </section>
 
-    <section class="features">
+    <section id="features" class="features">
         <div class="feature">
             <div class="text">
                 <h2>УДОБНЫЕ <span>ИНСТРУМЕНТЫ</span></h2>
                 <p>PHYSX предлагает продвинутый инструментарий для быстрой разработки.</p>
             </div>
-            <div class="gif"></div>
+            <div class="gif"><img src="media/Frame 5.png"></div>
         </div>
         <div class="feature reverse">
             <div class="gif"><img src="media/bebebe.gif"></div>
@@ -35,7 +37,7 @@
         </div>
     </section>
 
-    <section class="docs">
+    <section id="docs" class="docs">
         <div class="docs-sidebar">
             <h3>Меню</h3>
             <a class="active">Установка</a>
@@ -49,7 +51,13 @@
             <div class="code">
                 <pre>npm install physx-framework</pre>
             </div>
+
+            <p>по средству npm install я не помню я давно с линукса ушел, но вы разберитесь наверн.</p>
+            
+            <div style="margin-top: 500px;"></div>
         </div>
     </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
