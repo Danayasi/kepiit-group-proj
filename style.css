@@ -26,7 +26,7 @@
 
 body {
     font-family: 'Multiround Pro', system-ui, sans-serif;
-    background-image: url(media/Frame\ 4.png);
+    background-image: var(--bg);
     color: var(--text);
     line-height: 1.5;
 }
